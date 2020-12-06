@@ -75,7 +75,7 @@ public class PlayerController : MonoBehaviour
         {
             UnityEngine.Debug.Log("GAME OVER!");
             GameController.instance.ShowGameOverScreen();
-            Invoke("ShowMenu", 5);
+            Invoke("ShowMenu", 2);
 
 #if UNITY_EDITOR
             //UnityEditor.EditorApplication.ExitPlaymode();
