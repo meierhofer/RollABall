@@ -5,6 +5,7 @@ using System.Diagnostics;
 using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -55,9 +56,13 @@ public class PlayerController : MonoBehaviour
                 GameController.instance.EndTimer();
                 UnityEngine.Debug.Log("YOU WIN!");
                 //UnityEngine.Debug.Log($"It took you {m_stopwatch.Elapsed} to find all {m_collectablesTotalCount} collectables.");
-                
+
 #if UNITY_EDITOR //the following code is only included in the unity editor
                 //UnityEditor.EditorApplication.ExitPlaymode();//exits the playmode
+                Invoke("ShowMenu", 5);
+
+
+
 #endif
 
             }
@@ -70,8 +75,12 @@ public class PlayerController : MonoBehaviour
         {
             UnityEngine.Debug.Log("GAME OVER!");
             GameController.instance.ShowGameOverScreen();
+            Invoke("ShowMenu", 5);
+
 #if UNITY_EDITOR
             //UnityEditor.EditorApplication.ExitPlaymode();
+            
+            
 #endif
         }
         else if (other.gameObject.CompareTag("Start"))
@@ -82,5 +91,10 @@ public class PlayerController : MonoBehaviour
         //{
         //    TimerController.instance.EndTimer();
         //}
+    }
+
+    public void ShowMenu()
+    {
+        SceneManager.LoadScene("Menu");
     }
 }
