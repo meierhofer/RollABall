@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
@@ -83,6 +84,7 @@ public class GameController : MonoBehaviour
     {
         gamePlaying = false;
         Invoke("ShowGameFinishedScreen", 1.0f);
+        
     }
 
     private void ShowGameFinishedScreen()
@@ -94,6 +96,7 @@ public class GameController : MonoBehaviour
 
         // Sets the final time UI component on the Game Over screen
         GameFinishedPanel.transform.Find("FinalTimeText").GetComponent<Text>().text = timePlayingStr;
+        
     }
 
     public void ShowGameOverScreen()
@@ -107,5 +110,8 @@ public class GameController : MonoBehaviour
         // Sets the final time UI component on the Game Over screen
         GameOverPanel.transform.Find("FinalTimeText").GetComponent<Text>().text = timePlayingStr;
         GameOverPanel.transform.Find("CollectablesText").GetComponent<Text>().text = collectedStr;
+  
     }
+
+    
 }

@@ -8,4 +8,19 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 9a85f45381a2ce8468d30dd81fb85d49
+  - enabled: 1
+    path: Assets/Scenes/MainScene.unity
+    guid: b6ab968d270f9114892bbd2b893364f5
+  - enabled: 1
+    path: Assets/Scenes/PageLevel1.unity
+    guid: 4ecd2227a2be7486a937d13f30a09ae8
+  - enabled: 1
+    path: Assets/Scenes/PageLevel2.unity
+    guid: 199b04ba54eb8458a9258ad12230ddc4
+  - enabled: 1
+    path: Assets/Scenes/WinnerPage.unity
+    guid: 90a18437cf705480da535774e081471b
   m_configObjects: {}
