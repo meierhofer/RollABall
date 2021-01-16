@@ -9,10 +9,10 @@ public class MainMenu : MonoBehaviour
     public GameObject pauseMenu, settingsMenu;
     public GameObject menuFirstButton, pauseFirstButton, optionsFirstButton, optionsClosedButton;
 
-   public void PlayGame()
+    public void PlayGame()
     {
-        
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1);
+
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
     }
 
