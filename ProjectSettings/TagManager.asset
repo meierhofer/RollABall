@@ -8,6 +8,9 @@ TagManager:
   - Enemy
   - Start
   - hex
+  - Restart
+  - NextLevel
+  - player
   layers:
   - Default
   - TransparentFX

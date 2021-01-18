@@ -10,7 +10,7 @@ using UnityEngine.SceneManagement;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float m_speed = 1f; //speed modifier
-    
+
     private Rigidbody m_playerRigidbody = null; //reference to the players rigidbody
 
     private float m_movementX, m_movementY; //input vector components
@@ -18,13 +18,13 @@ public class PlayerController : MonoBehaviour
     private int m_collectablesTotalCount, m_collectablesCounter; //everything we need to count the given collectables
 
     private Stopwatch m_stopwatch; //takes the time
-    
+
     private void Start()
     {
         m_playerRigidbody = GetComponent<Rigidbody>(); //get the rigidbody component
 
         m_collectablesTotalCount = m_collectablesCounter = GameObject.FindGameObjectsWithTag("Collectable").Length; //find all gameobjects in the scene which are tagged with "Collectable" and count them via Length property 
-        
+
         m_stopwatch = Stopwatch.StartNew(); //start the stopwatch
     }
 
@@ -40,7 +40,7 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
         Vector3 movement = new Vector3(m_movementX, 0f, m_movementY); //translate the 2d vector into a 3d vector
-        
+
         m_playerRigidbody.AddForce(movement * m_speed); //apply a force to the rigidbody
     }
 
@@ -79,8 +79,8 @@ public class PlayerController : MonoBehaviour
 
 #if UNITY_EDITOR
             //UnityEditor.EditorApplication.ExitPlaymode();
-            
-            
+
+
 #endif
         }
         else if (other.gameObject.CompareTag("Start"))
@@ -94,9 +94,18 @@ public class PlayerController : MonoBehaviour
     }
 
 
-
     public void ShowMenu()
     {
         SceneManager.LoadScene("Menu");
     }
+
+
+    //private void OnCollisionEnter(Collision coll)
+    //{
+    //    if (coll.gameObject.CompareTag("Restart"))              //has the other gameobject the tag "Restart"
+    //    {
+    //        SceneManager.LoadScene("MainScene");
+    //    }
+    //}
 }
+
