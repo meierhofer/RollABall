@@ -10,7 +10,9 @@ using UnityEngine.SceneManagement;
 public class PlayerController1 : MonoBehaviour
 {
     [SerializeField] private float m_speed = 1f; //speed modifier
-    
+    [SerializeField] private Transform respawnPoint;
+
+
     private Rigidbody m_playerRigidbody = null; //reference to the players rigidbody
 
     //private Boolean frozen;
@@ -87,7 +89,7 @@ public class PlayerController1 : MonoBehaviour
             //frozen = true;
             //m_collectablesCounter++;
             //other.gameObject.SetActive(true)
-
+            this.gameObject.transform.position = respawnPoint.transform.position;
 
 
 #if UNITY_EDITOR
