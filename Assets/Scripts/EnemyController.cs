@@ -5,7 +5,9 @@ using UnityEngine.AI;
 
 public class EnemyController : MonoBehaviour
 {
-    [SerializeField] private GameObject m_playerObject = null; //reference to our player object
+    [SerializeField] private GameObject m_playerObject1 = null; //reference to our player object
+    [SerializeField] private GameObject m_playerObject2 = null; //reference to our player object
+
     [SerializeField] private float      m_detectionRadius       = 4f; //observed radius of the enemy
 
     [SerializeField] private Material m_idleMaterial    = null; //material which is attached while in 'idle mode'
@@ -27,10 +29,17 @@ public class EnemyController : MonoBehaviour
 
     private void Update()
     {
-        if (Vector3.Distance(m_playerObject.transform.position, gameObject.transform.position) < m_detectionRadius) //distance from player to enemy is smaller than the given detection radius - therefore the enemy is in 'chasing mode' 
+        if (Vector3.Distance(m_playerObject1.transform.position, gameObject.transform.position) < m_detectionRadius) //distance from player to enemy is smaller than the given detection radius - therefore the enemy is in 'chasing mode' 
         {
             m_agent.GetComponent<Renderer>().material = m_chasingMaterial; //set the corresponding material
-            m_agent.SetDestination(m_playerObject.transform.position); //chase the player - set its position as destination point
+            m_agent.SetDestination(m_playerObject1.transform.position); //chase the player - set its position as destination point
+            return;
+        }
+
+        if (Vector3.Distance(m_playerObject2.transform.position, gameObject.transform.position) < m_detectionRadius) //distance from player to enemy is smaller than the given detection radius - therefore the enemy is in 'chasing mode' 
+        {
+            m_agent.GetComponent<Renderer>().material = m_chasingMaterial; //set the corresponding material
+            m_agent.SetDestination(m_playerObject2.transform.position); //chase the player - set its position as destination point
             return;
         }
 
@@ -39,4 +48,6 @@ public class EnemyController : MonoBehaviour
         if(m_agent.remainingDistance < 0.5f) //if the agent is close to its set goal it targets a new one
             m_agent.SetDestination(GetNextDestination());
     }
+
+    
 }

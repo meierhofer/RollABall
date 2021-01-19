@@ -10,12 +10,12 @@ public class GameController : MonoBehaviour
     public static GameController instance;
 
     public GameObject collectableContainer, hudContainer, GameFinishedPanel, GameOverPanel;
-    public Text collectableCounter, timeCounter;
+    public Text collectableCounter1, collectableCounter2, timeCounter;
     public bool gamePlaying { get; private set; }
 
     //public int countdownTime;
 
-    private int numTotalCollectables, numCollected;
+    private int numTotalCollectables, numCollected1, numCollected2;
 
     private float startTime, elapsedTime;
 
@@ -33,8 +33,13 @@ public class GameController : MonoBehaviour
     void Start()
     {
         numTotalCollectables = collectableContainer.transform.childCount;
-        numCollected = 0;
-        collectableCounter.text = "Collectables : 0/ " + numTotalCollectables;
+        numCollected1 = 0;
+        collectableCounter1.text = "Collectables : 0/ " + numTotalCollectables;
+
+        //numTotalCollectables = collectableContainer2.transform.childCount;
+        numCollected2 = 0;
+        collectableCounter2.text = "Collectables : 0/ " + numTotalCollectables;
+
         timeCounter.text = "Time: 00:00.00";
         gamePlaying = true;
         timerGoing = false;
@@ -66,24 +71,43 @@ public class GameController : MonoBehaviour
         }
     }
 
-    public void CollectItems()
+    public void CollectItems1()
     {
-        numCollected++;
+        numCollected1++;
+        
+        string collectableCounterStr1 = "Collectables: " + numCollected1 + " / " + numTotalCollectables;
+        collectableCounter1.text = collectableCounterStr1;
 
-        string collectableCounterStr = "Collectables: " + numCollected + " / " + numTotalCollectables;
-        collectableCounter.text = collectableCounterStr;
+   
 
-        if(numCollected >= numTotalCollectables)
+        if (numCollected1 >= (numTotalCollectables/2)+1 )
         {
             EndGame();
         }
 
     }
 
+    public void CollectItems2()
+    {
+      
+        numCollected2++;
+
+        string collectableCounterStr2 = "Collectables: " + numCollected2 + " / " + numTotalCollectables;
+        collectableCounter2.text = collectableCounterStr2;
+
+        if (numCollected2 >= (numTotalCollectables/2)+1)
+        {
+            EndGame();
+        }
+
+    }
+
+
     private void EndGame()
     {
         gamePlaying = false;
-        Invoke("ShowGameFinishedScreen", 1.0f);
+        //Invoke("ShowGameFinishedScreen", 1.0f);
+        SceneManager.LoadScene("PageLevel2");
         
     }
 
@@ -105,7 +129,7 @@ public class GameController : MonoBehaviour
         hudContainer.SetActive(false);
         // Creates a nicely formatted time string for the final time
         string timePlayingStr = "Time: " + timePlaying.ToString("mm':'ss'.'ff");
-        string collectedStr = "Collectables: " + numCollected + " / " + numTotalCollectables;
+        string collectedStr = "Collectables: " + numCollected1 + " / " + numTotalCollectables;
 
         // Sets the final time UI component on the Game Over screen
         GameOverPanel.transform.Find("FinalTimeText").GetComponent<Text>().text = timePlayingStr;
