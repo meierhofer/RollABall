@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -2402,7 +2402,7 @@ MonoBehaviour:
   m_ActionEvents: []
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
-  m_DefaultActionMap: Player
+  m_DefaultActionMap: Player2
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 173549070}
 --- !u!54 &573126756
@@ -3335,9 +3335,9 @@ MonoBehaviour:
   m_ActionEvents: []
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
-  m_DefaultActionMap: Player
+  m_DefaultActionMap: 4a1ec182-4106-417e-8780-a223da8cbfea
   m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 39911221}
 --- !u!114 &1050116466
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3347,11 +3347,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1050116459}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9cf260ae9d1c46b4fb57755f18130045, type: 3}
+  m_Script: {fileID: 11500000, guid: 6afce98e5f624ba4fbf911b7f6fbe27d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_speed: 20
-  respawnPoint: {fileID: 0}
+  respawnPoint: {fileID: 1572160081}
 --- !u!1 &1087388979
 GameObject:
   m_ObjectHideFlags: 0
