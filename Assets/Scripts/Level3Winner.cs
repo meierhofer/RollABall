@@ -8,7 +8,7 @@ public class Level3Winner : MonoBehaviour
 {
     public void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Player") || collision.gameObject.CompareTag("Player2"))
+        if (collision.gameObject.CompareTag("player1") || collision.gameObject.CompareTag("player2"))
         {
             EndGame();
         }

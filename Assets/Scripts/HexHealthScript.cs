@@ -9,19 +9,38 @@ public class HexHealthScript : MonoBehaviour
     public Material noDamage;
     public Material oneDamage;
     public Material twoDamage;
+    private float waitTime = 0.5f;
+    private float timer = 0.0f;
 
-    public bool isPlayer = true;
+    public bool isPlayer;
 
     private void Start()
     {
         GetComponent<Renderer>().material = noDamage;
+        timer = 0;
+        isPlayer = false;
+    }
+
+    private void Update()
+    {
+        if(isPlayer == true)
+        {
+            timer += Time.deltaTime;
+            if(timer >= waitTime)
+            {
+                DecreaseHealth();
+            }
+        }
     }
 
     public void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.CompareTag("Player") || collision.gameObject.CompareTag("Player2"))
+
+        if(collision.gameObject.CompareTag("player1") || collision.gameObject.CompareTag("player2"))
         {
-            DecreaseHealth();
+            isPlayer = true;
+            
+            
         }
                
 
@@ -30,49 +49,41 @@ public class HexHealthScript : MonoBehaviour
 
     public void DecreaseHealth()
     {
-        if( isPlayer == true)
-        {
-            Wait();
-            isPlayer = false;
-        }
+        /* if( isPlayer == true)
+         {
+             Wait();
+             isPlayer = false;
+         }
+         */
+      
+           
+            hp -= 1;
 
-        hp -= 1;
 
-        if (hp == 2)
-        {
-            GetComponent<Renderer>().material = oneDamage;
+            if (hp == 2)
+            {
+                this.GetComponent<Renderer>().material = oneDamage;
 
-        }
+            }
 
-        if (hp == 1)
-        {
-            GetComponent<Renderer>().material = twoDamage;
-        }
+            if (hp == 1)
+            {
+                this.GetComponent<Renderer>().material = twoDamage;
+            }
 
-        if (hp <= 0)
-        {
-            Destroy(gameObject);
-        }
+            if (hp <= 0)
+            {
+                Destroy(this.gameObject);
+            }
+            timer = timer - waitTime;
+      
+        
         
     }
     
     
-    public void OnCollisionStay(Collision collision)
-    {
-       
-        if (collision.gameObject.CompareTag("Player") || collision.gameObject.CompareTag("Player2"))
-        {
-            isPlayer = true;
-        }
-            
-        
-
-    }
     
-    IEnumerator Wait()
-    {
-        yield return new WaitForSecondsRealtime(5);
-    }
+   
 
 
 
