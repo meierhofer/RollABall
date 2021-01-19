@@ -82,6 +82,8 @@ public class GameController : MonoBehaviour
 
         if (numCollected1 >= (numTotalCollectables/2)+1 )
         {
+            Winner.scorePlayer1 += 1;
+            Winner.Level2 = "Player 1";
             EndGame();
         }
 
@@ -97,6 +99,8 @@ public class GameController : MonoBehaviour
 
         if (numCollected2 >= (numTotalCollectables/2)+1)
         {
+            Winner.scorePlayer2 += 1;
+            Winner.Level2 = "Player 2";
             EndGame();
         }
 

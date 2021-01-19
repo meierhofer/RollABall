@@ -13,12 +13,12 @@ public class Respawn : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.CompareTag("Player")) 
+        if(other.gameObject.CompareTag("player1")) 
             {
             player1.transform.position = respawnPoint.transform.position;
              }
 
-        else if (other.gameObject.CompareTag("Player2")) 
+        else if (other.gameObject.CompareTag("player2")) 
             {
                 player2.transform.position = respawnPoint.transform.position;
             }
