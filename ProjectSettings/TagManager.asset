@@ -8,7 +8,11 @@ TagManager:
   - Enemy
   - Start
   - hex
-  - Player2
+  - Restart
+  - NextLevel
+  - player
+  - player1
+  - player2
   layers:
   - Default
   - TransparentFX

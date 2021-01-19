@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/PageLevel1.unity
     guid: 4ecd2227a2be7486a937d13f30a09ae8
   - enabled: 1
+    path: Assets/Scenes/Level3-LastManStanding.unity
+    guid: c2a9f3a485f54b6498e61a874bb42a2b
+  - enabled: 1
     path: Assets/Scenes/PageLevel2.unity
     guid: 199b04ba54eb8458a9258ad12230ddc4
   - enabled: 1

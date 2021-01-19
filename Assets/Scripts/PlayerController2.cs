@@ -10,6 +10,7 @@ using UnityEngine.SceneManagement;
 public class PlayerController2 : MonoBehaviour
 {
     [SerializeField] private float m_speed = 1f; //speed modifier
+
     [SerializeField] private Transform respawnPoint;
 
     private Rigidbody m_playerRigidbody = null; //reference to the players rigidbody
@@ -21,14 +22,14 @@ public class PlayerController2 : MonoBehaviour
     private int m_collectablesTotalCount, m_collectablesCounter; //everything we need to count the given collectables
 
     private Stopwatch m_stopwatch; //takes the time
-    
+
     private void Start()
     {
         //frozen = false;
         m_playerRigidbody = GetComponent<Rigidbody>(); //get the rigidbody component
 
         m_collectablesTotalCount = m_collectablesCounter = GameObject.FindGameObjectsWithTag("Collectable").Length; //find all gameobjects in the scene which are tagged with "Collectable" and count them via Length property 
-        
+
         m_stopwatch = Stopwatch.StartNew(); //start the stopwatch
     }
 
@@ -45,7 +46,7 @@ public class PlayerController2 : MonoBehaviour
     private void FixedUpdate()
     {
         Vector3 movement = new Vector3(m_movementX, 0f, m_movementY); //translate the 2d vector into a 3d vector
-        
+
         m_playerRigidbody.AddForce(movement * m_speed); //apply a force to the rigidbody
         
      
@@ -110,11 +111,18 @@ public class PlayerController2 : MonoBehaviour
         
     }
 
-   
-    
-
     public void ShowMenu()
     {
         SceneManager.LoadScene("Menu");
     }
+
+
+    //private void OnCollisionEnter(Collision coll)
+    //{
+    //    if (coll.gameObject.CompareTag("Restart"))              //has the other gameobject the tag "Restart"
+    //    {
+    //        SceneManager.LoadScene("MainScene");
+    //    }
+    //}
 }
+
