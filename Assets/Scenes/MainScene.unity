@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -396,7 +396,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 39911219}
   m_LocalRotation: {x: 0.1768555, y: -0, z: -0, w: 0.9842369}
-  m_LocalPosition: {x: -0.8, y: 8.3, z: -73.5}
+  m_LocalPosition: {x: -0.8, y: 7.34, z: -70.91}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -714,7 +714,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 173549069}
   m_LocalRotation: {x: 0.1768555, y: -0, z: -0, w: 0.9842369}
-  m_LocalPosition: {x: 0.3, y: 8.3, z: -73.5}
+  m_LocalPosition: {x: 0.3, y: 7.15, z: -70.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2373,6 +2373,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_speed: 20
+  respawnPoint: {fileID: 0}
 --- !u!114 &573126755
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3350,6 +3351,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_speed: 20
+  respawnPoint: {fileID: 0}
 --- !u!1 &1087388979
 GameObject:
   m_ObjectHideFlags: 0
@@ -4675,7 +4677,8 @@ MonoBehaviour:
   hudContainer: {fileID: 123158744}
   GameFinishedPanel: {fileID: 1087388979}
   GameOverPanel: {fileID: 1177820593}
-  collectableCounter: {fileID: 341963595}
+  collectableCounter1: {fileID: 0}
+  collectableCounter2: {fileID: 0}
   timeCounter: {fileID: 388307374}
 --- !u!1001 &1553569055
 PrefabInstance:
@@ -5155,7 +5158,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a4cd23db1867443509eb5dfe0aa956a2, type: 2}
+  - {fileID: 2100000, guid: 7918b3f42ce5232489ee0bd3583bfd26, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
