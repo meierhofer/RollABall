@@ -12,7 +12,7 @@ public class OSCController : MonoBehaviour
 
     public PlayerController2 playerController;
 
-
+    //public GameObject phone;
 
 
     // Start is called before the first frame update
@@ -24,12 +24,19 @@ public class OSCController : MonoBehaviour
     private void ReceivedMessage(OSCMessage message)
     {
         Vector2 touch;
+        //Quaternion rotation;
 
         //Debug.Log(message.ToVector2Double(out touch));
+
+        ////if(message.ToQuaternion(out rotation))
+        //{
+        //    Debug.Log(rotation);
+        //}
+
         if(message.ToVector2Double(out touch) == true)
         {
             playerController.OnMoveVector2(touch);
-            Debug.Log(touch);
+            //Debug.Log(touch);
         }
 
         //Debug.LogFormat("Received: {0}", message);
