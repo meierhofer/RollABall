@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Collectable
+  - Enemy
+  - Start
+  - hex
+  - Player2
   layers:
   - Default
   - TransparentFX
@@ -14,7 +18,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Glow
   - 
   - 
   - 
