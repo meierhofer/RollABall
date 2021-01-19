@@ -11,6 +11,8 @@ TagManager:
   - Restart
   - NextLevel
   - player
+  - player1
+  - player2
   layers:
   - Default
   - TransparentFX
