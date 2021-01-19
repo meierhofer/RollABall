@@ -43,6 +43,12 @@ public class PlayerController2 : MonoBehaviour
         
     }
 
+    public void OnMoveVector2(Vector2 input)
+    {
+        m_movementX = input.x;
+        m_movementY = input.y;
+    }
+
     private void FixedUpdate()
     {
         Vector3 movement = new Vector3(m_movementX, 0f, m_movementY); //translate the 2d vector into a 3d vector
