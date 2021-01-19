@@ -2,7 +2,7 @@
     "name": "RollABall",
     "maps": [
         {
-            "name": "Player",
+            "name": "Player2",
             "id": "a09e5c25-6e0d-45b0-b4e6-15386d37f794",
             "actions": [
                 {
