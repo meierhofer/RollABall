@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -195,7 +195,7 @@ Camera:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 0.5
+    width: 0.49
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
@@ -225,7 +225,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 39911219}
   m_LocalRotation: {x: 0.3237507, y: -0.000000029802319, z: -0, w: 0.94614244}
-  m_LocalPosition: {x: -2.05, y: 19.95, z: -53.2}
+  m_LocalPosition: {x: -2, y: 27, z: -55}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -349,9 +349,9 @@ Camera:
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.5
+    x: 0.51
     y: 0
-    width: 0.5
+    width: 0.49
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
@@ -433,7 +433,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 104622466}
   m_LocalRotation: {x: 0.32375073, y: -0, z: -0, w: 0.94614244}
-  m_LocalPosition: {x: 3.61, y: 19.95, z: -53.2}
+  m_LocalPosition: {x: 3.61, y: 26.61, z: -55}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1148,7 +1148,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh41508
+  m_Name: pb_Mesh21836
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3065,7 +3065,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0.5
+  m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -3797,7 +3797,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 650853005}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 5.36, z: -35.78}
+  m_LocalPosition: {x: 0, y: 5.36, z: -37.83}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5665,7 +5665,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6afce98e5f624ba4fbf911b7f6fbe27d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_speed: 10
+  m_speed: 20
   respawnPoint: {fileID: 650853006}
 --- !u!4 &1050116466 stripped
 Transform:
@@ -5839,7 +5839,7 @@ Transform:
   m_GameObject: {fileID: 1093670673}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -16.2, z: 13.8}
-  m_LocalScale: {x: 10, y: 2, z: 15.091}
+  m_LocalScale: {x: 16.022, y: 2, z: 15.091}
   m_Children: []
   m_Father: {fileID: 1176127834}
   m_RootOrder: 0
@@ -10565,7 +10565,7 @@ PrefabInstance:
     - target: {fileID: 2300000, guid: 4d167806285be1145935ba43ca5996fd, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: a4cd23db1867443509eb5dfe0aa956a2, type: 2}
+      objectReference: {fileID: 2100000, guid: 7e6edce72f324274d97105ecc355e441, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d167806285be1145935ba43ca5996fd, type: 3}
 --- !u!1 &1883812875
@@ -10762,7 +10762,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 438471cedff17e842b576c0a40b19ddc, type: 2}
+      objectReference: {fileID: 2100000, guid: 9a5794a6aa5a0ea439f0a4b0cf2cdff2, type: 2}
     - target: {fileID: 919132149155446097, guid: 12161131c0d9af543abea38ac14d9b06,
         type: 3}
       propertyPath: m_Name
@@ -11423,7 +11423,7 @@ PrefabInstance:
     - target: {fileID: 2024689692104574448, guid: dec01c96d74532942b4b5e4280d2010d,
         type: 3}
       propertyPath: m_TagString
-      value: Player2
+      value: player2
       objectReference: {fileID: 0}
     - target: {fileID: 2024689692104574450, guid: dec01c96d74532942b4b5e4280d2010d,
         type: 3}
@@ -11440,6 +11440,11 @@ PrefabInstance:
       propertyPath: respawnPoint
       value: 
       objectReference: {fileID: 650853006}
+    - target: {fileID: 2024689692104574451, guid: dec01c96d74532942b4b5e4280d2010d,
+        type: 3}
+      propertyPath: m_speed
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 2024689692104574457, guid: dec01c96d74532942b4b5e4280d2010d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11562,7 +11567,7 @@ PrefabInstance:
     - target: {fileID: 8684438517030642802, guid: 5153e01e44e7a364192a88e4dc0e2415,
         type: 3}
       propertyPath: m_TagString
-      value: Player
+      value: player1
       objectReference: {fileID: 0}
     - target: {fileID: 8684438517030642804, guid: 5153e01e44e7a364192a88e4dc0e2415,
         type: 3}

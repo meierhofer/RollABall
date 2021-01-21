@@ -89,6 +89,7 @@ public class PlayerController2 : MonoBehaviour
             //frozen = true;
             //m_collectablesCounter++;
             this.gameObject.transform.position = respawnPoint.transform.position;
+            //GetComponent<Rigidbody>().velocity = Vector3.zero; //Get Rigidbody and set velocity to (0f, 0f, 0f)
 
 
 
@@ -99,6 +100,11 @@ public class PlayerController2 : MonoBehaviour
 
 #endif
         }
+       /* else if (other.gameObject.CompareTag("Respawn"))
+        {
+            GetComponent<Rigidbody>().velocity = Vector3.zero; //Get Rigidbody and set velocity to (0f, 0f, 0f)
+
+        }*/
         else if (other.gameObject.CompareTag("Start"))
         {
             GameController.instance.BeginTimer();
