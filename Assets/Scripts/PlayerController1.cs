@@ -54,6 +54,8 @@ public class PlayerController1 : MonoBehaviour
         
     }
 
+    
+
     private void OnTriggerEnter(Collider other)//executed when the player hits another collider (which is set to 'is trigger')
     {
         if (other.gameObject.CompareTag("Collectable"))//has the other gameobject the tag "Collectable"
