@@ -8,6 +8,7 @@ public class Respawn : MonoBehaviour
     [SerializeField] private Transform player2;
 
     [SerializeField] private Transform respawnPoint;
+    [SerializeField] private Transform respawnPoint2;
 
 
 
@@ -17,13 +18,16 @@ public class Respawn : MonoBehaviour
             {
             player1.transform.position = respawnPoint.transform.position;
             player1.GetComponent<Rigidbody>().velocity = Vector3.zero;
+            player1.GetComponent<Rigidbody>().angularVelocity  = Vector3.zero;
 
         }
 
         else if (other.gameObject.CompareTag("player2")) 
 
         {
-            player2.transform.position = respawnPoint.transform.position;
+            player2.transform.position = respawnPoint2.transform.position;
+            player2.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
+
             player2.GetComponent<Rigidbody>().velocity = Vector3.zero;
             
            
