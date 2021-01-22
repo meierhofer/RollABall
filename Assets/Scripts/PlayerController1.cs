@@ -40,7 +40,6 @@ public class PlayerController1 : MonoBehaviour
              //split input vector in its two components
             m_movementX = movementVector.x;
             m_movementY = movementVector.y;
-        
     }
 
     private void FixedUpdate()
