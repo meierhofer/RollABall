@@ -2281,7 +2281,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_speed: 20
-  respawnPoint: {fileID: 0}
+  respawnPoint: {fileID: 710427767}
 --- !u!114 &573126755
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5400,8 +5400,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 34.971634, y: 4.890566, z: 2.6621535}
-  m_Center: {x: -1.0917368, y: 1.9452829, z: 13.517034}
+  m_Size: {x: 34.85105, y: 4.890566, z: 2.6621547}
+  m_Center: {x: -2.22644, y: 1.9452829, z: 13.517034}
 --- !u!65 &1573744041
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5413,8 +5413,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 35.031723, y: 4.890566, z: 2.8567386}
-  m_Center: {x: -2.6322358, y: 1.9452829, z: -16.711884}
+  m_Size: {x: 33.96875, y: 4.890566, z: 2.8567398}
+  m_Center: {x: -2.100743, y: 1.9452829, z: -16.711884}
 --- !u!1 &1728606491
 GameObject:
   m_ObjectHideFlags: 0
@@ -5532,8 +5532,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 34.36946, y: 1.2529196, z: 31.753044}
-  m_Center: {x: -0.18053098, y: 0.12645979, z: 0.375599}
+  m_Size: {x: 34.767437, y: 1.2529196, z: 31.753044}
+  m_Center: {x: 0.018445473, y: 0.12645979, z: 0.37559897}
 --- !u!65 &1757439110
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5545,8 +5545,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 34.143856, y: 4.890566, z: 1.9549906}
-  m_Center: {x: -3.8262131, y: 1.9452829, z: 13.763548}
+  m_Size: {x: 30.125397, y: 4.890566, z: 1.9549906}
+  m_Center: {x: -5.835445, y: 1.9452829, z: 13.763548}
 --- !u!65 &1757439111
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5558,8 +5558,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 36.10078, y: 4.890566, z: 2.9331317}
-  m_Center: {x: -5.5457025, y: 1.9452829, z: -16.673683}
+  m_Size: {x: 34.693817, y: 4.890566, z: 2.9331317}
+  m_Center: {x: -6.249185, y: 1.9452829, z: -16.673683}
 --- !u!1 &1764003055
 GameObject:
   m_ObjectHideFlags: 0
