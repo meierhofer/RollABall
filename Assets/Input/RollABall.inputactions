@@ -110,17 +110,6 @@
                 },
                 {
                     "name": "",
-                    "id": "c1f7a91b-d0fd-4a62-997e-7fb9b69bf235",
-                    "path": "<Gamepad>/rightStick",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Gamepad",
-                    "action": "Look",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "8c8e490b-c610-4785-884f-f04217b23ca4",
                     "path": "<Pointer>/delta",
                     "interactions": "",
@@ -138,17 +127,6 @@
                     "processors": "",
                     "groups": "Joystick",
                     "action": "Look",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "143bb1cd-cc10-4eca-a2f0-a3664166fe91",
-                    "path": "<Gamepad>/rightTrigger",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Gamepad",
-                    "action": "Fire",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -229,7 +207,7 @@
             ],
             "bindings": [
                 {
-                    "name": "WASD",
+                    "name": "Arrow",
                     "id": "e474ea24-67d3-4ed3-bf42-2d283d1f89ad",
                     "path": "Dpad",
                     "interactions": "",
@@ -309,6 +287,17 @@
                     "name": "",
                     "id": "0da85129-d981-4f33-a156-7551bd6b9c8f",
                     "path": "<Gamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e2d69006-469d-4bc4-b6ec-c9cb5f8d3e96",
+                    "path": "<SwitchProControllerHID>/leftStick",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
