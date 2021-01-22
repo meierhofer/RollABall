@@ -3043,7 +3043,7 @@ GameObject:
   - component: {fileID: 921893093}
   m_Layer: 0
   m_Name: RespawnTrigger
-  m_TagString: Restart
+  m_TagString: Respawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5780,10 +5780,11 @@ Animation:
   m_GameObject: {fileID: 2001717034}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 4defcb12d6d8b453a8145598ce11b072, type: 2}
+  m_Animation: {fileID: 7400000, guid: 774f99282f2fb4b848965c01833b7735, type: 2}
   m_Animations:
   - {fileID: 7400000, guid: 57e1cbeda55214f5195e52aa23872ad0, type: 2}
   - {fileID: 7400000, guid: 4defcb12d6d8b453a8145598ce11b072, type: 2}
+  - {fileID: 7400000, guid: 774f99282f2fb4b848965c01833b7735, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
