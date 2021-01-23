@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -932,13 +932,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 39911219}
-  m_LocalRotation: {x: 0.38268343, y: 0, z: 0, w: 0.92387956}
+  m_LocalRotation: {x: 0.30070576, y: 0, z: 0, w: 0.953717}
   m_LocalPosition: {x: -3, y: 5.3, z: -4.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 35, y: 0, z: 0}
 --- !u!114 &39911223
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2869,13 +2869,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 104622466}
-  m_LocalRotation: {x: 0.38268343, y: 0, z: 0, w: 0.92387956}
+  m_LocalRotation: {x: 0.30070576, y: 0, z: 0, w: 0.953717}
   m_LocalPosition: {x: 3, y: 5.3, z: -4.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 35, y: 0, z: 0}
 --- !u!1001 &106464576
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38031,7 +38031,12 @@ PrefabInstance:
     - target: {fileID: 2024689692104574450, guid: dec01c96d74532942b4b5e4280d2010d,
         type: 3}
       propertyPath: m_DefaultActionMap
-      value: a09e5c25-6e0d-45b0-b4e6-15386d37f794
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 2024689692104574450, guid: dec01c96d74532942b4b5e4280d2010d,
+        type: 3}
+      propertyPath: m_DefaultControlScheme
+      value: Gamepad
       objectReference: {fileID: 0}
     - target: {fileID: 2024689692104574451, guid: dec01c96d74532942b4b5e4280d2010d,
         type: 3}
@@ -38162,7 +38167,12 @@ PrefabInstance:
     - target: {fileID: 8684438517030642792, guid: 5153e01e44e7a364192a88e4dc0e2415,
         type: 3}
       propertyPath: m_DefaultActionMap
-      value: 4a1ec182-4106-417e-8780-a223da8cbfea
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8684438517030642792, guid: 5153e01e44e7a364192a88e4dc0e2415,
+        type: 3}
+      propertyPath: m_DefaultControlScheme
+      value: Keyboard&Mouse
       objectReference: {fileID: 0}
     - target: {fileID: 8684438517030642793, guid: 5153e01e44e7a364192a88e4dc0e2415,
         type: 3}
